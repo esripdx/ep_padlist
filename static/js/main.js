@@ -16,7 +16,6 @@ function filter(e) {
     items.each(function(){
       var item = $(this);
       var text = item.find('a').text();
-      console.log(text);
 
       if (regex.exec(text)) {
         item.addClass('visible');
