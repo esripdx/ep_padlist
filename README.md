@@ -8,6 +8,8 @@ The list is available at `/list`
 
 npm install https://github.com/esripdx/ep_padlist/tarball/master
 
+One crucial issue is to ensure that the URL path to individual pads is correct. By default etherpad-lite has a URL template like http://localhost:9001/p/[padname] - depending on how you configure your webserver that proxies the node server, you may eliminate the /p/ to make the pads' URLs more "friendly", e.g. http(s)://[sitename]/[padname] - in that case, you will need to remove the /p/ from templates/pad.html, or otherwise alter it to suit your needs.
+
 ### License
 
 Copyright 2013 Esri, Inc
